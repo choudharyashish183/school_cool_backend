@@ -76,7 +76,7 @@ const adminRegister = async (req, res) => {
             res.send(result);
         }
     } catch (err) {
-        res.status(422).json(err);
+        res.status(500).json(err);
     }
 };
 
